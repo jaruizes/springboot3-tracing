@@ -1,6 +1,5 @@
 com/jaruiz/examples/observability/consumer/business/model/ProcessData.class
-com/jaruiz/examples/observability/messages/dto/ProcessDataMessage.class
 com/jaruiz/examples/observability/consumer/api/kafka/ConsumerService.class
-com/jaruiz/examples/observability/consumer/business/ServiceC.class
-com/jaruiz/examples/observability/consumer/business/ports/ServiceCBusinessPort.class
+com/jaruiz/examples/observability/consumer/business/ports/ConsumerBusinessPort.class
+com/jaruiz/examples/observability/consumer/business/Consumer.class
 com/jaruiz/examples/observability/consumer/ConsumerSpringApplication.class

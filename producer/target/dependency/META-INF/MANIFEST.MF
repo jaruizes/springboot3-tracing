@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Created-By: Maven JAR Plugin 3.3.0
 Build-Jdk-Spec: 17
-Implementation-Title: b-service-spring
+Implementation-Title: producer
 Implementation-Version: 0.0.1-SNAPSHOT
 Main-Class: org.springframework.boot.loader.launch.JarLauncher
 Start-Class: com.jaruiz.examples.observability.producer.ProducerSpringAp

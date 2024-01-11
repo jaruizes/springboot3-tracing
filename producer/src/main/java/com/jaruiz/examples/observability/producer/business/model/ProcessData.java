@@ -1,25 +1,12 @@
 package com.jaruiz.examples.observability.producer.business.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class ProcessData {
     private Long id;
     private Integer initValue;
     private Integer currentValue;
-
-    public ProcessData(Long id, Integer initValue, Integer finalValue) {
-        this.id = id;
-        this.initValue = initValue;
-        this.currentValue = finalValue;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public Integer getInitValue() {
-        return initValue;
-    }
-
-    public Integer getCurrentValue() {
-        return currentValue;
-    }
 }

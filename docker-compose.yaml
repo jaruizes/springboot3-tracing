@@ -1,50 +1,33 @@
 services:
-  service-b:
-    image: spring/service-b:base-inst
-    container_name: service-b
+  producer:
+    image: springboot3/producer:latest
+    container_name: producer
     depends_on:
       kafka:
         condition: service_healthy
     environment:
       JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.22.1.jar"
-      OTEL_SERVICE_NAME: "service-b(Spring)"
+      OTEL_SERVICE_NAME: "producer"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4319"
       OTEL_METRICS_EXPORTER: "none"
-#      OTEL_LOGS_EXPORTER: "otlp"
       SPRING_KAFKA_PRODUCER_BOOTSTRAP-SERVERS: "kafka:9092"
     ports:
       - "8081:8081"
-    healthcheck:
-      test: [ "CMD", "curl", "-f", "http://service-b:8081/actuator/health" ]
-      start_period: 60s
-      interval: 10s
-      timeout: 10s
-      retries: 12
-    logging:
-      driver: fluentd
-      options:
-        fluentd-async-connect: "true"
-        fluentd-address: "localhost:24224"
-  service-c:
-    image: spring/service-c:base-inst
-    container_name: service-c
+  consumer:
+    image: springboot3/consumer:latest
+    container_name: consumer
     depends_on:
       kafka:
         condition: service_healthy
     environment:
       JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.22.1.jar"
-      OTEL_SERVICE_NAME: "service-c(Spring)"
+      OTEL_SERVICE_NAME: "consumer"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4319"
       OTEL_METRICS_EXPORTER: "none"
       #      OTEL_LOGS_EXPORTER: "otlp"
       SPRING_KAFKA_CONSUMER_BOOTSTRAP-SERVERS: "kafka:9092"
     ports:
       - "8082:8082"
-    logging:
-      driver: fluentd
-      options:
-        fluentd-async-connect: "true"
-        fluentd-address: "localhost:24224"
   zookeeper:
     image: quay.io/strimzi/kafka:0.33.0-kafka-3.3.2
     container_name: zookeeper

@@ -1,6 +1,5 @@
-/Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/business/ports/ServiceCBusinessPort.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/business/ports/ConsumerBusinessPort.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/business/Consumer.java
 /Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/api/kafka/ConsumerService.java
 /Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/business/model/ProcessData.java
 /Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/ConsumerSpringApplication.java
-/Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/messages/dto/ProcessDataMessage.java
-/Users/jaruiz/Dev/Personal/springboot3-tracing/consumer/src/main/java/com/jaruiz/examples/observability/consumer/business/ServiceC.java
