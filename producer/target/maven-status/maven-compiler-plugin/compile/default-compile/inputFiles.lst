@@ -1,0 +1,9 @@
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/api/rest/BRestController.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/business/ports/BServiceBusinessPort.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/ProducerSpringApplication.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/business/model/ProcessData.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/messages/dto/ProcessDataMessage.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/api/rest/dto/ProcessDataDTO.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/business/BService.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/adapters/kafka/PublishService.java
+/Users/jaruiz/Dev/Personal/springboot3-tracing/producer/src/main/java/com/jaruiz/examples/observability/producer/business/ports/ProcessPublishPort.java

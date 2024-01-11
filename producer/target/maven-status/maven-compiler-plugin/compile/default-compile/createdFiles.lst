@@ -1,0 +1,9 @@
+com/jaruiz/examples/observability/producer/business/ports/BServiceBusinessPort.class
+com/jaruiz/examples/observability/producer/ProducerSpringApplication.class
+com/jaruiz/examples/observability/producer/api/rest/BRestController.class
+com/jaruiz/examples/observability/producer/business/ports/ProcessPublishPort.class
+com/jaruiz/examples/observability/messages/dto/ProcessDataMessage.class
+com/jaruiz/examples/observability/producer/business/model/ProcessData.class
+com/jaruiz/examples/observability/producer/business/BService.class
+com/jaruiz/examples/observability/producer/adapters/kafka/PublishService.class
+com/jaruiz/examples/observability/producer/api/rest/dto/ProcessDataDTO.class
