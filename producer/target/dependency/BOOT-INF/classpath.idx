@@ -22,7 +22,7 @@
 - "BOOT-INF/lib/spring-webmvc-6.1.2.jar"
 - "BOOT-INF/lib/spring-aop-6.1.2.jar"
 - "BOOT-INF/lib/spring-expression-6.1.2.jar"
-- "BOOT-INF/lib/opentelemetry-javaagent-1.22.1.jar"
+- "BOOT-INF/lib/opentelemetry-javaagent-1.32.0.jar"
 - "BOOT-INF/lib/opentelemetry-instrumentation-annotations-1.32.0.jar"
 - "BOOT-INF/lib/opentelemetry-api-1.34.0.jar"
 - "BOOT-INF/lib/opentelemetry-context-1.34.0.jar"

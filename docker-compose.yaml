@@ -6,7 +6,7 @@ services:
       kafka:
         condition: service_healthy
     environment:
-      JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.22.1.jar"
+      JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.32.0.jar"
       OTEL_SERVICE_NAME: "producer"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4319"
       OTEL_METRICS_EXPORTER: "none"
@@ -20,7 +20,7 @@ services:
       kafka:
         condition: service_healthy
     environment:
-      JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.22.1.jar"
+      JAVA_TOOL_OPTIONS: "-javaagent:/app/lib/opentelemetry-javaagent-1.32.0.jar"
       OTEL_SERVICE_NAME: "consumer"
       OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector:4319"
       OTEL_METRICS_EXPORTER: "none"
